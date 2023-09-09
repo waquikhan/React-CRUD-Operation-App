@@ -38,7 +38,7 @@ export default function Form(props) {
       <input type="text" value={details.address} name="address" onChange={changeDetails} />
       <br />
 
-      <button onClick={add}>{props.editIndex == -1 ? 'Add': 'Edit'}</button>
+      <button onClick={add} style={{ border: "1px solid black" ,color: 'white',backgroundColor:"green" }} >{props.editIndex == -1 ? 'Add': 'Edit'}</button>
 
     </div>
   )
