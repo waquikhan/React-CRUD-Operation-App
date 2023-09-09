@@ -4,7 +4,7 @@ export default function Table(props) {
   return (
     <div>
       <table style={{ border: "1px solid black" }}>
-        <tr>
+        <tr >
           <th>Index</th>
           <th>Name</th>
           <th>Rollno</th>
@@ -27,10 +27,10 @@ export default function Table(props) {
 
 
             <td>
-              <button onClick={() => props.setEditIndex(index)}>Edit</button>
+              <button onClick={() => props.setEditIndex(index)} style={{color:"white",backgroundColor:'#362155'}}>Edit</button>
             </td>
             <td>
-              <button onClick={() => props.deleteItem(index)}>Delete</button>
+              <button onClick={() => props.deleteItem(index)}style={{color:"white",backgroundColor:'red'}}>Delete</button>
             </td>
           </tr>
         ))}
