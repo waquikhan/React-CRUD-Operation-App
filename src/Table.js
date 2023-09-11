@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 
 export default function Table(props) {
+
   return (
-    <div>
+    <div id="Student-Table">
       <table style={{ border: "1px solid black" }}>
-        <tr >
+        <tr id="table-row-1" >
           <th>Index</th>
-          <th>Name</th>
           <th>Rollno</th>
+          <th>Name</th>
           <th>class</th>
           <th>Phone </th>
           <th>Address</th>
@@ -18,8 +19,8 @@ export default function Table(props) {
         {props.list.map((obj, index) => (
           <tr>
             <td>{index}</td>
-            <td>{obj.name}</td>
             <td>{obj.rollno}</td>
+            <td>{obj.name}</td>
             <td>{obj.class}</td>
             <td>{obj.phone}</td>
             <td>{obj.address}</td>

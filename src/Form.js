@@ -21,21 +21,21 @@ export default function Form(props) {
     }
 
   return (
-    <div>
-        Name:
+    <div id='Name'>
+        Name: 
       <input type="text" value={details.name} name="name" onChange={changeDetails} />
       <br />
         Roll no.:
-      <input type="text" value={details.rollNo} name="rollNo" onChange={changeDetails} />
+      <input id='Roll-no' type="text" value={details.rollNo} name="rollNo" onChange={changeDetails} />
       <br />
         Class:
-      <input type="text" value={details.class} name="class" onChange={changeDetails} />
+      <input id='Class' type="text" value={details.class} name="class" onChange={changeDetails} />
       <br />
         Phone number:
-      <input type="text" value={details.phone} name="phone" onChange={changeDetails} />
+      <input id='phone-no' type="text" value={details.phone} name="phone" onChange={changeDetails} />
       <br />
         Address:
-      <input type="text" value={details.address} name="address" onChange={changeDetails} />
+      <input id='address' type="text" value={details.address} name="address" onChange={changeDetails} />
       <br />
 
       <button onClick={add} style={{ border: "1px solid black" ,color: 'white',backgroundColor:"green" }} >{props.editIndex == -1 ? 'Add': 'Edit'}</button>

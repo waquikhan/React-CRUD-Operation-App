@@ -1,12 +1,63 @@
 import React, {useState} from 'react'
 import logo from './logo.svg';
 import './App.css';
-// import './Table.css';
+import './Table.css';
 import Form from './Form';
 import Table from './Table';
 
 function App() {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState([
+    {
+      name: 'abc',
+      rollno : 1,
+      class : 12,
+      phone : 9923539374,
+      address : 'pune'
+
+    },
+    {
+      name: 'pqr',
+      rollno: 3,
+      class : 12,
+      phone : 985798724,
+      address : 'nagpur'
+    },
+    {
+      name: 'nmp',
+      rollno: 2,
+      class : 12,
+      phone : 12345,
+      address : 'kolhapur'
+    },
+    {
+      name: 'nmp',
+      rollno: 2,
+      class : 12,
+      phone : 12345,
+      address : 'kolhapur'
+    },
+    {
+      name: 'nmp',
+      rollno: 2,
+      class : 12,
+      phone : 12345,
+      address : 'kolhapur'
+    },
+    {
+      name: 'nmp',
+      rollno: 2,
+      class : 12,
+      phone : 12345,
+      address : 'kolhapur'
+    },
+    {
+      name: 'nmp',
+      rollno: 2,
+      class : 12,
+      phone : 12345,
+      address : 'kolhapur'
+    }
+  ]);
   const [editIndex, setEditIndex] = useState(-1);
 
   const deleteItem = (index) => {
