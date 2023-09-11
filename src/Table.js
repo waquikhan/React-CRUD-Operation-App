@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export default function Table(props) {
 
   return (
+
     <div id="Student-Table">
       <table style={{ border: "1px solid black" }}>
         <tr id="table-row-1" >
