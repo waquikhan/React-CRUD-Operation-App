@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
+import './Form.css';
 
 export default function Form(props) {
   const [details, setDetails] = useState({});
+  const [isShown, setIsShown] = useState(false);  
 
   useEffect(() => {
     console.log("Effect");
 
     setDetails(props.list[props.editIndex] || {});
   }, [props.editIndex]);
-
+  
   const changeDetails = (e) => {
     setDetails({ ...details, [e.target.name]: e.target.value });
   };
@@ -61,7 +63,7 @@ export default function Form(props) {
    </div>
 </form> 
 <div>
-<button onClick={add} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px' }} >{props.editIndex === -1 ? 'Add': 'update'}</button>
+<button className="btn" onClick={add} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px'}} >{props.editIndex === -1 ? 'Add': 'update'}</button>
 </div>
 </container>
   );
