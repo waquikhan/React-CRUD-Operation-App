@@ -11,13 +11,68 @@ function App() {
     {
       rollno : 1,
       name: 'abc',
-      class : 12,
+      email:"-",
       phone : 9923539374,
-      address : 'pune'
+      city : 'pune',
+      address : 12
 
     },
     {
-      rollno: 3,
+      rollno : 2,
+      name: 'abc',
+      email:"-",
+      phone : 9923539374,
+      city : 'pune',
+      address : 12
+
+    },
+    {
+      rollno : 3,
+      name: 'abc',
+      email:"-",
+      phone : 9923539374,
+      city : 'pune',
+      address : 12
+
+    },
+    {
+      rollno : 4,
+      name: 'abc',
+      email:"-",
+      phone : 9923539374,
+      city : 'pune',
+      address : 12
+
+    },
+    {
+      rollno : 5,
+      name: 'abc',
+      email:"-",
+      phone : 9923539374,
+      city : 'pune',
+      address : 12
+
+    },
+    {
+      rollno : 6,
+      name: 'abc',
+      email:"-",
+      phone : 9923539374,
+      city : 'pune',
+      address : 12
+
+    },
+    {
+      rollno : 7,
+      name: 'abc',
+      email:"-",
+      phone : 9923539374,
+      city : 'pune',
+      address : 12
+
+    },
+    {
+      rollno: 8,
       name: 'pqr',
       class : 12,
       phone : 985798724,
