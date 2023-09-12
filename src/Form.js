@@ -60,7 +60,9 @@ export default function Form(props) {
       </div>
    </div>
 </form> 
-<button onClick={add} style={{border: "1px solid white" , marginTop:"px " ,color: 'white',backgroundColor:"black" , width: "200px",height:'30px' }} >{props.editIndex === -1 ? 'Add': 'update'}</button>
+<div>
+<button onClick={add} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px' }} >{props.editIndex === -1 ? 'Add': 'update'}</button>
+</div>
 </container>
   );
 }

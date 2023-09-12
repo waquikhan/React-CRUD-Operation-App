@@ -5,7 +5,7 @@ export default function Table(props) {
   return (
 
     <div id="Student-Table">
-      <table style={{ border: "1px solid black", width:"1100px"  }}>
+      <table style={{ border: "1px solid black", width:"95%"}}>
         <tr id="table-row-1" style={{ border: "1px solid black" }}>
           <th style={{ border: "1px solid black" }}>Index</th>
           <th style={{ border: "1px solid black" }}>Rollno</th>
