@@ -6,16 +6,16 @@ export default function Table(props) {
 
     <div id="Student-Table">
       <table style={{ border: "1px solid black", width:"95%"}}>
-        <tr id="table-row-1" style={{ border: "1px solid black" }}>
-          <th style={{ border: "1px solid black" }}>Index</th>
-          <th style={{ border: "1px solid black" }}>Rollno</th>
-          <th style={{ border: "1px solid black" }}>Name</th>
-          <th style={{ border: "1px solid black" }}>email</th>
-          <th style={{ border: "1px solid black" }}>Phone </th>
-          <th style={{ border: "1px solid black" }}>City</th>
-          <th style={{ border: "1px solid black" }}>Address</th>
-          <th style={{ border: "1px solid black" }}>Edit</th>
-          <th style={{ border: "1px solid black" }}>Delete</th>
+        <tr id="table-row-1" style={{ border: "1px solid black" , backgroundColor:'orange'}}>
+          <th style={{ border: "1px solid black" }}> <strong>Index </strong></th>
+          <th style={{ border: "1px solid black" }}> <strong>Rollno </strong></th>
+          <th style={{ border: "1px solid black" }}> <strong>Name </strong></th>
+          <th style={{ border: "1px solid black" }}> <strong>email </strong></th>
+          <th style={{ border: "1px solid black" }}> <strong>Phone  </strong></th>
+          <th style={{ border: "1px solid black" }}> <strong>City </strong></th>
+          <th style={{ border: "1px solid black" }}> <strong>Address </strong></th>
+          <th style={{ border: "1px solid black" }}> <strong>Edit </strong></th>
+          <th style={{ border: "1px solid black" }}> <strong>Delete </strong></th>
         </tr>
 
         {props.list.map((obj, index) => (
