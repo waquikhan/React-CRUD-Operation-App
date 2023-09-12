@@ -6,27 +6,23 @@
     font-family: 'Poppins', sans-serif;
   }
 body{
-    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    color: white;
+    background: rgb(59, 58, 58);
     margin: 10px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
 }
 #Student-Table {
-    padding-top: 20px;
-    height: 500px;
-    color:#1e2228;
-    
+    width: 100%;
+    margin-top: 10px;
+    height: 320px;
+    color: #000000;
+    display: flex;
+    justify-content: center;    
 }
 div tr {
   border: 1 px solid black;
-  margin: 40px;
-  background-color: rgb(221, 209, 209);
+  background-color: rgb(214, 209, 209);
 }
 #table-row-1,tr,th {
-    width: 600px;
-  margin: 50px;
-  padding: 15px;
+  padding: 2px;
 }

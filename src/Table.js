@@ -31,10 +31,10 @@ export default function Table(props) {
 
 
             <td style={{ border: "1px solid black" }} >
-              <button onClick={() => props.setEditIndex(index)} style={{color:"white",backgroundColor:'#362155',padding:"1px" , margin:"3px" ,width:"90px" }}>Edit</button>
+              <button onClick={() => props.setEditIndex(index)} style={{color:"white",backgroundColor:'#362155',padding:"1px" , margin:"1px" ,width:"90px" }}>Edit</button>
             </td>
             <td style={{ border: "1px solid black" }} >
-              <button onClick={() => props.deleteItem(index)}style={{color:"white",backgroundColor:'red' ,padding:"1px" , margin:"3px" ,width:"90px"}}>Delete</button>
+              <button onClick={() => props.deleteItem(index)}style={{color:"white",backgroundColor:'red' ,padding:"1px" , margin:"1px" ,width:"90px"}}>Delete</button>
             </td>
           </tr>
         ))}
