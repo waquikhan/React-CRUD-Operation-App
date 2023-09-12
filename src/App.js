@@ -2,57 +2,58 @@ import React, {useState} from 'react'
 import logo from './logo.svg';
 import './App.css';
 import './Table.css';
+import './Form.css';
 import Form from './Form';
 import Table from './Table';
 
 function App() {
   const [list, setList] = useState([
     {
-      name: 'abc',
       rollno : 1,
+      name: 'abc',
       class : 12,
       phone : 9923539374,
       address : 'pune'
 
     },
     {
-      name: 'pqr',
       rollno: 3,
+      name: 'pqr',
       class : 12,
       phone : 985798724,
       address : 'nagpur'
     },
     {
-      name: 'nmp',
       rollno: 2,
+      name: 'nmp',
       class : 12,
       phone : 12345,
       address : 'kolhapur'
     },
     {
-      name: 'nmp',
       rollno: 2,
+      name: 'nmp',
       class : 12,
       phone : 12345,
       address : 'kolhapur'
     },
     {
-      name: 'nmp',
       rollno: 2,
+      name: 'nmp',
       class : 12,
       phone : 12345,
       address : 'kolhapur'
     },
     {
-      name: 'nmp',
       rollno: 2,
+      name: 'nmp',
       class : 12,
       phone : 12345,
       address : 'kolhapur'
     },
     {
-      name: 'nmp',
       rollno: 2,
+      name: 'nmp',
       class : 12,
       phone : 12345,
       address : 'kolhapur'
