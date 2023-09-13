@@ -115,6 +115,7 @@ function App() {
     }
   ]);
   const [editIndex, setEditIndex] = useState(-1);
+  const [search ,setSearch] = useState('');
 
   const deleteItem = (index) => {
     const deletedList = list.filter((o, i) => i !== index);
@@ -137,8 +138,10 @@ function App() {
     <div className="App">
     
     <Form list={list} editIndex={editIndex} addToList={addToList} />
-
-    <Table setEditIndex={setEditIndex} list={list} deleteItem={deleteItem} />
+    <lable>SEARCH</lable>
+    <input type="text" onChange={e => setSearch(e.target.value)} value={search} />
+    <button onClick={() =>setSearch('')}>Clear Search</button>
+    <Table search={search} setEditIndex={setEditIndex} list={list} deleteItem={deleteItem} />
       
     </div>
   );

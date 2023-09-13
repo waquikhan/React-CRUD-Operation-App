@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 export default function Table(props) {
 
+  const filteredList = (props.list || []).filter(item => item?.name?.includes(props.search));
+
   return (
 
     <div id="Student-Table">
@@ -18,7 +20,7 @@ export default function Table(props) {
           <th style={{ border: "1px solid black" }}> <strong>Delete </strong></th>
         </tr>
 
-        {props.list.map((obj, index) => (
+        {filteredList.map((obj, index) => (
           <tr style={{ border: "1px solid black" }}>
             <td style={{ border: "1px solid black" }}>{index}</td>
             <td style={{ border: "1px solid black" }}>{obj.rollno}</td>
