@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 
 export default function Table(props) {
-
   const filteredList = (props.list || []).filter(item => item?.name?.includes(props.search));
 
 
   return (
-
     <div id="Student-Table">
       <table style={{ border: "1px solid black", width:"95%"}}>
         <tr id="table-row-1" style={{ border: "1px solid black" , backgroundColor:'orange'}}>

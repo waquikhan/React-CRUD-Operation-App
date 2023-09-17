@@ -19,6 +19,10 @@ export default function Form(props) {
     setDetails({ name: "", rollno: "", phone: "", email: "", address: "", city:""});
     props.addToList(details);
   };
+  const cancell = () => {
+    setDetails({ name: "", rollno: "", phone: "", email: "", address: "", city:""});
+    props.addToList(details);
+  };
 
   return (
 //----------------------------------------------New Code --------------------------------------------
@@ -64,6 +68,8 @@ export default function Form(props) {
 </form> 
 <div>
 <button className="btn" onClick={add} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px'}} >{props.editIndex === -1 ? 'Add': 'update'}</button>
+<button className="btn" onClick={cancell} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px'}} >Cancel</button>
+
 </div>
 </container>
   );

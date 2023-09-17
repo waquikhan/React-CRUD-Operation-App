@@ -116,8 +116,8 @@ function App() {
     
     <Form list={list} editIndex={editIndex} addToList={addToList} />
     <div className="Search">
-    <lable>SEARCH</lable>
-    <input type="text" onChange={e => setSearch(e.target.value)} value={search} />
+    <lable className="Search-text" >SEARCH : </lable>
+    <input className='Input-text' placeholder='Search By Name' type="text" onChange={e => setSearch(e.target.value)} value={search} style={{color:'white'}}/>
     <button onClick={() =>setSearch('')}>Clear Search</button>
     </div>
     <Table search={search} setEditIndex={setEditIndex} list={list} deleteItem={deleteItem} />
