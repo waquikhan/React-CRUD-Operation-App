@@ -3,7 +3,7 @@ import './Form.css';
 
 export default function Form(props) {
   const [details, setDetails] = useState({});
-  const [isShown, setIsShown] = useState(false);  
+  const [isShown, setIsShown] = useState(false);
 
   useEffect(() => {
     console.log("Effect");
@@ -24,6 +24,9 @@ export default function Form(props) {
     props.addToList(details);
   };
 
+
+
+
   return (
 //----------------------------------------------New Code --------------------------------------------
 <container className="container">
@@ -32,7 +35,7 @@ export default function Form(props) {
    <div className="form-row">
       <div className="input-data">
          <label htmlFor=""><strong>Enter Your Roll No :</strong> </label>  
-         <input type="number"id='Roll-no' placeholder="Enter Yout Roll Number" value={details.rollno} name="rollno" onChange={changeDetails}></input>
+         <input type="number"id='Roll-no' placeholder="Enter Yout Roll Number"   value={details.rollno} name="rollno" onChange={changeDetails}></input>
          <div className="underline"></div>
       </div>
       <div className="input-data">
