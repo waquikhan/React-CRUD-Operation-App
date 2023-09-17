@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import logo from './logo.svg';
+import * as ReactDOM from "react-dom/client";
 import './App.css';
 import './Table.css';
 import './Form.css';
@@ -7,6 +7,11 @@ import Form from './Form';
 import Table from './Table';
 import Navbar from './Navbar'
 import Home from './Component/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+
+
+
 
 function App() {
   const [list, setList] = useState([
@@ -114,9 +119,13 @@ function App() {
   }
 
   return (
+
+
+
+
     <div className="App">
-    <Navbar/>
-    {/* <Home/> */}
+    <Navbar/> 
+    <Home/>
     <Form list={list} editIndex={editIndex} addToList={addToList} />
     <div className="Search">
     <lable className="Search-text" >SEARCH : </lable>
