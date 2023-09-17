@@ -4,6 +4,7 @@ export default function Table(props) {
 
   const filteredList = (props.list || []).filter(item => item?.name?.includes(props.search));
 
+
   return (
 
     <div id="Student-Table">

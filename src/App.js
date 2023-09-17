@@ -10,109 +10,86 @@ function App() {
   const [list, setList] = useState([
     {
       rollno : 1,
-      name: 'abc',
-      email:"-",
+      name: 'Waqui Ahmad khabn ',
+      email:"waquikhan313@gmail.com",
       phone : 9923539374,
       city : 'pune',
-      address : 12
+      address : "Kondhwa"
 
     },
     {
       rollno : 2,
-      name: 'abc',
-      email:"-",
-      phone : 9923539374,
-      city : 'pune',
-      address : 12
+      name: 'Mohammad awes',
+      email:"awes@gmail.com",
+      phone : 9077675499,
+      city : 'Hydarabade',
+      address : 'Rampalli'
 
     },
     {
       rollno : 3,
-      name: 'abc',
-      email:"-",
-      phone : 9923539374,
-      city : 'pune',
-      address : 12
+      name: 'Khan hasan',
+      email:"khanhasan.khan@hotmail.com ",
+      phone : 9954782209,
+      city : 'Akola',
+      address : 'Patur'
 
     },
     {
       rollno : 4,
-      name: 'abc',
-      email:"-",
-      phone : 9923539374,
-      city : 'pune',
-      address : 12
+      name: 'Izhan Shaikh',
+      email:"izhan.shaikh@hotmail.com",
+      phone : 1234576543,
+      city : 'Akola',
+      address : 'Deepak Chowk'
 
     },
     {
       rollno : 5,
-      name: 'abc',
-      email:"-",
-      phone : 9923539374,
-      city : 'pune',
-      address : 12
+      name: 'Mohsin Abdul Salam',
+      email:"mohsin.abdul.salam@rediffmail.com",
+      phone : 9923554909,
+      city : 'Amravati',
+      address : 'Chandni Chowk'
 
     },
     {
       rollno : 6,
-      name: 'abc',
-      email:"-",
+      name: 'Sayed Saddam ',
+      email:"sayyed.saddam@rediffmail.com",
       phone : 9923539374,
-      city : 'pune',
-      address : 12
+      city : 'Amravati',
+      address : 'Pinjar'
 
     },
     {
       rollno : 7,
-      name: 'abc',
-      email:"-",
+      name: 'Urooj Khan  ',
+      email:"Urooj.khan@rediffmail.com",
       phone : 9923539374,
-      city : 'pune',
-      address : 12
+      city : 'Akola',
+      address : 'Balapur'
 
     },
     {
-      rollno: 8,
-      name: 'pqr',
-      class : 12,
-      phone : 985798724,
-      address : 'nagpur'
+      rollno : 8,
+      name: 'Sayed Sajid',
+      email:"sayed.sajid@gmail.com",
+      phone : 9923539374,
+      city : 'Amravati',
+      address : 'pathan chowk'
+
     },
     {
-      rollno: 2,
-      name: 'nmp',
-      class : 12,
-      phone : 12345,
-      address : 'kolhapur'
-    },
-    {
-      rollno: 2,
-      name: 'nmp',
-      class : 12,
-      phone : 12345,
-      address : 'kolhapur'
-    },
-    {
-      rollno: 2,
-      name: 'nmp',
-      class : 12,
-      phone : 12345,
-      address : 'kolhapur'
-    },
-    {
-      rollno: 2,
-      name: 'nmp',
-      class : 12,
-      phone : 12345,
-      address : 'kolhapur'
-    },
-    {
-      rollno: 2,
-      name: 'nmp',
-      class : 12,
-      phone : 12345,
-      address : 'kolhapur'
+      rollno : 9,
+      name: 'Imtan pathan',
+      email:"imrankhanpathan@gmail.com",
+      phone : 9923539374,
+      city : 'Amravati',
+      address : 'pathan chowk'
+
     }
+   
   ]);
   const [editIndex, setEditIndex] = useState(-1);
   const [search ,setSearch] = useState('');
@@ -138,9 +115,11 @@ function App() {
     <div className="App">
     
     <Form list={list} editIndex={editIndex} addToList={addToList} />
+    <div className="Search">
     <lable>SEARCH</lable>
     <input type="text" onChange={e => setSearch(e.target.value)} value={search} />
     <button onClick={() =>setSearch('')}>Clear Search</button>
+    </div>
     <Table search={search} setEditIndex={setEditIndex} list={list} deleteItem={deleteItem} />
       
     </div>
