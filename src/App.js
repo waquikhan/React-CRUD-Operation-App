@@ -5,6 +5,8 @@ import './Table.css';
 import './Form.css';
 import Form from './Form';
 import Table from './Table';
+import Navbar from './Navbar'
+import Home from './Component/Home';
 
 function App() {
   const [list, setList] = useState([
@@ -113,7 +115,8 @@ function App() {
 
   return (
     <div className="App">
-    
+    <Navbar/>
+    {/* <Home/> */}
     <Form list={list} editIndex={editIndex} addToList={addToList} />
     <div className="Search">
     <lable className="Search-text" >SEARCH : </lable>
