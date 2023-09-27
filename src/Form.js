@@ -5,6 +5,8 @@ export default function Form(props) {
   const [details, setDetails] = useState({});
   const [isShown, setIsShown] = useState(false);
 
+  var nameerror = document.getElementById('NameError');
+
   useEffect(() => {
     console.log("Effect");
 
@@ -18,6 +20,9 @@ export default function Form(props) {
   const add = () => {
     setDetails({ name: "", rollno: "", phone: "", email: "", address: "", city:""});
     props.addToList(details);
+    if(details.name=" "){
+      alert("Student Namde is Mendatory")
+    }
   };
   const cancell = () => {
     setDetails({ name: "", rollno: "", phone: "", email: "", address: "", city:""});
@@ -40,7 +45,7 @@ export default function Form(props) {
       </div>
       <div className="input-data">
          <label htmlFor=""><strong>Enter Your  Name :</strong> </label>  
-         <input type="text" placeholder="Enter Your Full Name" value={details.name} name="name" onChange={changeDetails}></input>
+         <input type="text" placeholder="Enter Your Full Name"  value={details.name} name="name" onChange={changeDetails}></input>
          <div className="underline"></div>
       </div>
    </div>
@@ -70,7 +75,7 @@ export default function Form(props) {
    </div>
 </form> 
 <div>
-<button className="btn" onClick={add} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px'}} >{props.editIndex === -1 ? 'Add': 'update'}</button>
+<button className="btn" id="AddButton" onClick={add} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px'}} >{props.editIndex === -1 ? 'Add': 'update'}</button>
 <button className="btn" onClick={cancell} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px'}} >Cancel</button>
 
 </div>
