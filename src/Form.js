@@ -20,9 +20,7 @@ export default function Form(props) {
   const add = () => {
     setDetails({ name: "", rollno: "", phone: "", email: "", address: "", city:""});
     props.addToList(details);
-    if(details.name=" "){
-      alert("Student Namde is Mendatory")
-    }
+
   };
   const cancell = () => {
     setDetails({ name: "", rollno: "", phone: "", email: "", address: "", city:""});
