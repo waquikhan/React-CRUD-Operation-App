@@ -5,7 +5,7 @@ import './Form.css';
 import Form from './Form';
 import Table from './Table';
 import Navbar from './Navbar'
-import Home from './Component/Home';
+// import Home from './Component/Home';
 
 
 
@@ -122,7 +122,7 @@ function App() {
     {/* <Home/>  */}
     <Form list={list} editIndex={editIndex} addToList={addToList} />
     <div className="Search">
-    <lable className="Search-text" >SEARCH : </lable>
+    <lable className="Search-text" >Search : </lable>
     <input className='Input-text' placeholder='Search By Name' type="text" onChange={e => setSearch(e.target.value)} value={search} style={{color:'black'}}/>
     <button onClick={() =>setSearch('')}>Clear Search</button>
     </div>

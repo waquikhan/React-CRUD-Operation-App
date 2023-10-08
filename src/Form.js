@@ -8,7 +8,7 @@ export default function Form(props) {
   var nameerror = document.getElementById('NameError');
 
   useEffect(() => {
-    console.log("Effect");
+   //  console.log("Effect");
 
     setDetails(props.list[props.editIndex] || {});
   }, [props.editIndex]);
@@ -28,15 +28,6 @@ export default function Form(props) {
   };
 
 
-  const VeriFyName = () =>{
-      var studentname = document.getElementById("StudentName").value;
-      var addbutton = document.getElementById("AddButton");
-      if(studentname==""){
-         addbutton.disabled=true;
-      }
-      addbutton.disabled=false;
-  }
-
 
 
   return (
@@ -52,7 +43,7 @@ export default function Form(props) {
       </div>
       <div className="input-data">
          <label htmlFor=""><strong>Enter Your  Name :</strong> </label>  
-         <input type="text" placeholder="Enter Your Full Name" id="StudentName" onBlur={VeriFyName} value={details.name} name="name" onChange={changeDetails}></input>
+         <input type="text" placeholder="Enter Your Full Name" id="StudentName" value={details.name} name="name" onChange={changeDetails}></input>
          <div className="underline"></div>
       </div>
    </div>
@@ -82,7 +73,7 @@ export default function Form(props) {
    </div>
 </form> 
 <div>
-<button className="btn" id="AddButton" disabled onClick={add} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px'}} >{props.editIndex === -1 ? 'Add': 'update'}</button>
+<button className="btn" id="AddButton" disabled={!details.name?.length} onClick={add} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px'}} >{props.editIndex === -1 ? 'Add': 'update'}</button>
 <button className="btn" onClick={cancell} style={{border: "1px solid white" , marginTop:"10px " ,color: 'white',backgroundColor:"grey" , width: "200px",height:'30px'}} >Cancel</button>
 
 </div>
